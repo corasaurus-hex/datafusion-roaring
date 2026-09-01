@@ -10,7 +10,6 @@ keywords = ["datafusion", "roaring", "bitmap", "sql"]
 categories = ["database", "data-structures"]
 readme = "README.md"
 rust-version = "1.94.0"
-publish = ["crates-io"]
 exclude = ["/.github", "/.gitignore", "/AGENTS.md", "/CLAUDE.md"]
 
 [package.metadata.docs.rs]
