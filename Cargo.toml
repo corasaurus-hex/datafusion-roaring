@@ -1,0 +1,28 @@
+[package]
+name = "datafusion-roaring"
+version = "0.1.0"
+edition = "2024"
+description = "Roaring bitmap UDFs for Apache DataFusion"
+documentation = "https://docs.rs/datafusion-roaring"
+repository = "https://github.com/corasaurus-hex/datafusion-roaring"
+license = "MIT OR Apache-2.0"
+keywords = ["datafusion", "roaring", "bitmap", "sql"]
+categories = ["database", "data-structures"]
+readme = "README.md"
+rust-version = "1.94.0"
+publish = ["crates-io"]
+exclude = ["/.github", "/.gitignore", "/AGENTS.md", "/CLAUDE.md"]
+
+[package.metadata.docs.rs]
+targets = []
+
+[dependencies]
+arrow-array = { version = "59.2.0", default-features = false }
+arrow-schema = { version = "59.2.0", default-features = false }
+datafusion-common = { version = "55.0.0", default-features = false }
+datafusion-expr = { version = "55.0.0", default-features = false }
+roaring = "0.11.5"
+
+[dev-dependencies]
+datafusion = { version = "55.0.0", default-features = false, features = ["nested_expressions", "sql"] }
+tokio = { version = "1.53.1", features = ["macros", "rt-multi-thread"] }

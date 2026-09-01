@@ -1,0 +1,7 @@
+/target
+/lcov.info
+
+tmp/
+
+!AGENTS.md
+!CLAUDE.md
