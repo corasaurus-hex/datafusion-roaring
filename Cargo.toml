@@ -16,8 +16,8 @@ exclude = ["/.github", "/.gitignore", "/AGENTS.md", "/CLAUDE.md"]
 targets = []
 
 [dependencies]
-arrow-array = { version = "59.2.0", default-features = false }
-arrow-schema = { version = "59.2.0", default-features = false }
+arrow-array = { version = "59.3.0", default-features = false }
+arrow-schema = { version = "59.3.0", default-features = false }
 datafusion-common = { version = "55.0.0", default-features = false }
 datafusion-expr = { version = "55.0.0", default-features = false }
 roaring = "0.11.5"
